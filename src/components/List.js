@@ -5,7 +5,6 @@ import logo from "../img/logo.png";
 export default class List extends Component {
   state = {
     videos: [],
-    count: 0,
   };
 
   componentDidMount() {
@@ -19,7 +18,7 @@ export default class List extends Component {
 
     this.setState({ videos: response.data.items });
 
-    console.log(response.data);
+    //console.log(response.data);
   };
 
   render() {
